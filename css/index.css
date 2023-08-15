@@ -1,0 +1,116 @@
+:root {
+    --clr-white: #ffffff;
+    --clr-almost-white: #f5f5f5;
+    --clr-almost-black: #333333;
+    --clr-black: #000000;
+    --clr-ah-gray: #4d4d4d;
+    --clr-ah-light-blue: #5aa5eb;
+    --clr-ah-blue: #376eb4;
+    --clr-ah-dark-blue: #235087;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--clr-almost-black);
+    color: var(--clr-white);
+    font-size: 1.5em;
+    /* padding: 20px; */
+}
+
+.master-container {
+    margin: 0 auto;
+    width: 294mm;
+    height: 210mm;
+    background-color: var(--clr-ah-dark-blue);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.move-left,
+.move-right {
+    display: block;
+    position: absolute;
+    top: calc(50% - 25px);
+    color: var(--clr-white);
+    height: 50px;
+    width: 30px;
+    font-size: 50px;
+    border: 1px dashed yellow;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+
+.move-left {
+    left: 40px;
+}
+
+.move-right {
+    right: 40px;
+}
+
+@media (min-width: 320mm) {
+    .move-left {
+        left: -50px;
+    }
+
+    .move-right {
+        right: -50px;
+    }
+}
+
+.container-left {
+    /* position: relative; */
+    width: 50%;
+    border: 1px dashed yellow;
+}
+
+.cons-img {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* left: -40%; */
+    /* bottom: -10%; */
+    object-fit: cover;
+}
+
+.container-right {
+    padding: 3em 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    border: 1px dashed yellow;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.experience,
+.education,
+.specialization,
+.aircraft-types {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+.highlight {
+    font-weight: bold;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.logo {
+    height: 2em;
+}
