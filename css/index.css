@@ -102,8 +102,19 @@ body {
     font-size: 1em;
     margin-bottom: 1em;
 }
+
 .highlight {
     font-weight: bold;
+}
+
+.cv-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.cv-btn a {
+    color: var(--clr-white);
+    cursor: pointer;
 }
 
 .logo-wrapper {
