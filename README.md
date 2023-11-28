@@ -1,2 +1,2 @@
 # ah-portfolio
-tean portfolio
+team portfolio
